@@ -10,4 +10,10 @@
     width: 100%;
     padding: 0px 16px;
     display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.router-wrapper{
+    width: calc(100% - 266px);
 }
