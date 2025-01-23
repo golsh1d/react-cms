@@ -1,28 +1,17 @@
 import React from "react";
 import "./WidgetLg.css";
-import { useState } from "react";
+import { useState , useEffect} from "react";
 
 export default function WidgetLg() {
-  const [transactions] = useState([
-    {
-      id: 1,
-      img: "./Img/topbar/admin.jpg",
-      userName: "Golshid Ebrahimi",
-      date: "11 May",
-      amount: "100_000",
-      btnColor: "#4E6C50",
-      status: "Completed",
-    },
-    {
-      id: 2,
-      img: "./Img/widgetsm/hacker.jpg",
-      userName: "Hamid Booslik",
-      date: "12 May",
-      amount: "400_000",
-      btnColor: "#820000",
-      status: "Not Completed",
-    },
-  ]);
+  const [transactions , setTransactions] = useState([]);
+
+  useEffect(() => {
+      fetch('http://localhost:3000/transactions/')
+      .then(res => res.json())
+      .then(data => {
+        setTransactions(data)
+      })
+    } , [])
 
   return (
     <div className="widgetlg">

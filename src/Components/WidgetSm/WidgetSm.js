@@ -1,13 +1,18 @@
 import React from "react";
 import "./WidgetSm.css";
 import VisibilityIcon from "@mui/icons-material/Visibility";
-import { useState } from "react";
+import { useState , useEffect } from "react";
 
 export default function WidgetSm() {
-  const [newUsers] = useState([
-    { id: 1, userName: "Golshid Ebrahimi", role: "Web Developer", img : "./Img/topbar/admin.jpg"},
-    { id: 2, userName: "Hamidreza Booslik", role: "Hacker", img : "./Img/widgetsm/hacker.jpg" },
-  ]);
+  const [newUsers , setNewUser] = useState([]);
+
+  useEffect(() => {
+    fetch('http://localhost:3000/newUser/')
+    .then(res => res.json())
+    .then(data => {
+      setNewUser(data)
+    })
+  } , [])
 
   return (
     <div className="widgetsm">
