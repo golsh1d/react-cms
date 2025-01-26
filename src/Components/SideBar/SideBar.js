@@ -46,12 +46,10 @@ export default function SideBar() {
                         Users
                     </li>
                     </Link>
-                    <Link to="./newUser">
                     <li className="sidebar-list-item">
                         <PermIdentityOutlinedIcon className='sidebar-icon'/>
                         New User
                     </li>
-                    </Link>
                     <Link to="./products">
                     <li className="sidebar-list-item">
                         <StorefrontOutlinedIcon className='sidebar-icon'/>

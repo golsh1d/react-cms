@@ -33,7 +33,7 @@ export default function Products() {
       editable: true,
       renderCell: (params) => {
         return (
-          <Link to="{`/product/${params.row.id}">
+          <Link to={`/product/${params.row.id}`}>
             <div className="data-grid-name">
               <img src={params.row.img} alt="" className="data-grid-img" />
               {params.row.title}

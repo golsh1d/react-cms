@@ -1,0 +1,37 @@
+.product {
+    width: 100%;
+    padding: 8px 16px;
+    box-shadow: 0px 0px 5px 0px #efefef;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+input {
+    margin-bottom: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 0px 0px 5px 0px #bfbfbf;
+}
+
+button {
+    margin-top: 8px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 0px 0px 5px 0px #bfbfbf;
+    background-color: #fff;
+    color: #4E6C50;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}

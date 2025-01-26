@@ -25,7 +25,7 @@ export default function TopBar() {
                     <SettingsOutlinedIcon/>
                 </div>
                 <div className="topbar-img-wrapper">
-                    <img src="./Img/topbar/admin.jpg" alt="admin" />
+                    <img src="/Img/topbar/admin.jpg" alt="admin" />
                 </div>
             </div>
         </div>

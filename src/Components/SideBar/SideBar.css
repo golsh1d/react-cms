@@ -30,8 +30,7 @@
     transition: all 0.2s linear;
 }
 
-.sidebar-list-item:hover,
-.sidebar-list-item.active  {
+.sidebar-list-item:hover {
     background-color: #f5f5f5;
 }
 
